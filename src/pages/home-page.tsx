@@ -1,9 +1,9 @@
-import { MapView } from '@/components';
+import { MapView, SearchBar } from '@/components';
 
 export function Home() {
   return (
     <main>
-      <h1>Home Page</h1>
+      <SearchBar />
       <MapView />
     </main>
   );

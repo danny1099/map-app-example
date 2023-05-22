@@ -1,7 +1,8 @@
-import {useContext} from 'react'
-import {PlacesContext} from '@/context'
+import { useContext } from 'react';
+import { PlacesContext } from '@/context';
 
 export function usePlacesContext() {
-  const {isLoading, userLocation } = useContext(PlacesContext)
-  return {isLoading, userLocation }
+  const { isLoading, userLocation, searchPlacesByQuery, places_response } =
+    useContext(PlacesContext);
+  return { isLoading, userLocation, searchPlacesByQuery, places_response };
 }

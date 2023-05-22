@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  background-color: aqua;
+  position: fixed;
+  top: 80px;
+  left: 70px;
+  width: 350px;
+  z-index: 9998;
+}
+
+.container ul {
+  list-style: none;
+  font-size: smaller;
+  width: 300px;
+}
+
+.container li {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  margin-bottom: 5px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.container li > button {
+  height: 35px;
+  width: 90px;
+  font-size: xx-small;
+}
+
+.container li > span {
+  font-size: xx-small;
+}
